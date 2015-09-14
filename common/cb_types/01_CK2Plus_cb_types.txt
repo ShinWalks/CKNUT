@@ -1926,8 +1926,8 @@ claim_on_liege_plot = {
 	}
 	
 	on_reverse_demand_title = {
+		remove_claim = ROOT
 		ROOT = {
-			remove_claim = PREV
 			custom_tooltip = { text = MAY_NOT_BECOME_PRETENDER_AGAIN }
 			hidden_tooltip = {
 				reverse_opinion = {
@@ -2465,7 +2465,7 @@ other_claim_on_liege_plot = {
 					ROOT = { any_liege = { character = FROM } }
 				}
 			}
-			ROOT = { remove_claim = PREV }
+			remove_claim = ROOT
 		}
 		ROOT = {
 			custom_tooltip = { text = MAY_NOT_BECOME_PRETENDER_AGAIN }
@@ -4330,32 +4330,31 @@ carolingian_reconquest = {
 		}
 		
 		ROOT = {
-			has_landed_title = k_germany
+			higher_real_tier_than = DUKE
 			independent = yes
-			religion = catholic
-			capital_scope = {
+			OR = {
+				religion = catholic
+				religion = chalcedonian
+			}
+			rightful_religious_head_scope = {
+				NOT = { character = PREV }
+				NOT = { character = FROM }
 				OR = {
-					empire = { title = e_hre }
-					region = custom_germany
-					region = custom_lotharingia
-					region = custom_italy
-					region = custom_burgundy
-					region = custom_frisia
+					has_landed_title = k_papal_state
+					has_landed_title = k_papal_chalcedon
 				}
 			}
-			NOT = { is_title_active = e_karling }
-			NOT = { any_realm_title = { tier = count count = 100 } }
-			NOT = { has_character_flag = former_carolingian_emperor }
-			NOT = { has_global_flag = hre_formed }
-			NOT = { same_realm = FROM }
+			NOR = {
+				same_realm = FROM
+				is_title_active = e_karling
+				has_character_flag = former_carolingian_emperor
+				has_global_flag = hre_formed
+			}
 		}
 		FROM = {
-			religion_group = ROOT 
-			NOR = {
-				is_heresy_of = ROOT
-				is_parent_religion = ROOT
-				has_landed_title = k_papal_state
-			}
+			religion_group = ROOT
+			NOT = { is_heresy_of = ROOT }
+			NOT = { is_parent_religion = ROOT }
 		}
 	}
 
@@ -4366,8 +4365,19 @@ carolingian_reconquest = {
 	is_valid = {
 		ROOT = {
 			independent = yes
-			religion = catholic
+			OR = {
+				religion = catholic
+				religion = chalcedonian
+			}
 			NOT = { same_realm = FROM }
+		}
+	}
+	
+	is_valid_title = {
+		# either the target has the title or their top liege is the target
+		OR = {
+			FROM = { has_landed_title = PREV }
+			holder_scope = { is_liege_or_above = FROM }
 		}
 	}
 
@@ -4529,6 +4539,18 @@ carolingian_reconquest = {
 
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_landed_title = k_germany }
+			k_germany = {
+				has_holder = yes
+				holder_scope = { realm_size = 75 }
+			}
+		}
 	}
 }
 
@@ -4844,15 +4866,20 @@ carolingian_manifest_destiny = {
 		ROOT = {
 			dynasty = 25061
 			independent = yes
-			religion = catholic
+			OR = {
+				religion = catholic
+				religion = chalcedonian
+			}
 			higher_real_tier_than = DUKE
 			NOT = { has_global_flag = hre_formed }
 			NOT = { same_realm = FROM }
+			NOT = { rightful_religious_head = FROM }
 		}
 		FROM = {
 			NOT = { dynasty = ROOT }
 			religion = ROOT
 			NOT = { has_landed_title = k_papal_state }
+			NOT = { has_landed_title = k_papal_chalcedon }
 		}
 	}
 
@@ -4866,11 +4893,12 @@ carolingian_manifest_destiny = {
 						title = k_lotharingia
 						title = k_bavaria
 						title = k_saxony
+						title = k_italy
 					}
 				}
 			}
 			AND = {
-				ROOT = { has_character_flag = obj_become_exalted }
+				ROOT = { trait = paragon }
 				kingdom = {
 					OR = {
 						title = k_france
@@ -4924,16 +4952,11 @@ carolingian_manifest_destiny = {
 		ROOT = {
 			dynasty = 25061
 			independent = yes
-			religion = catholic
-			NOT = { same_realm = FROM }
-		}
-	}
-	
-	is_valid_title = {
-		FROM = {
-			any_realm_title = {
-				de_jure_liege_or_above = PREVPREV
+			OR = {
+				religion = catholic
+				religion = chalcedonian
 			}
+			NOT = { same_realm = FROM }
 		}
 	}
 
