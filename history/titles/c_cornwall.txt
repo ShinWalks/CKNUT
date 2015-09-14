@@ -112,11 +112,14 @@
 1020.1.1 = {
 	holder = 159470 #Godwyn ap Alured
 }
+1032.1.1 = {
+	liege = "d_bedford"
+}
 1066.1.1 = {
 	holder = 161281 #Kadoc of Cornwall
 } 
 1066.10.14 = {
-  liege = k_england
+  liege = "k_england"
 }
 1071.1.1 = {
 	holder = 354 #Brian of Penthièvre

@@ -11,14 +11,16 @@
 998.1.1 = {
 	holder = 1000255400
 }
-1066.1.1 = {
-	liege = "k_england"
+1032.1.1 = {
+	liege = "d_norfolk"
+	holder = 1000254103 # Thorkell the Tall
 }
 1066.1.1 = {
+	liege = "k_england"
 	holder = 198 #Waltheof Siwardsson 
 }
 1066.10.14 = {
-liege = "k_england"
+	liege = "k_england"
 }
 1076.1.1 = {
 	holder = 199 #Maud, Countess of Huntington

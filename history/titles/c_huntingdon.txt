@@ -11,6 +11,10 @@
 998.1.1 = {
 	holder = 1000255400
 }
+1032.1.1 = {
+	holder = 1000254103 # Thorkell the Tall
+	liege = "d_norfolk"
+}
 1065.1.1 = {
 	holder = 198 #Waltheof Siwardsson 
 }

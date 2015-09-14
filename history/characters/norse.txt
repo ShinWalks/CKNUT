@@ -7645,6 +7645,57 @@
 	}
 	1059.1.1 = {
 		death = "1059.1.1"
-
+	}
+}
+1000254101 = {
+	name = "Strut-Harald"
+	dynasty = 490
+	religion = norse_pagan
+	culture = norse
+	trait = tough_soldier
+	trait = brave
+	trait = hunter
+	trait = wroth
+	trait = viking
+	father = 101500
+	930.1.1 = {
+		birth = "930.1.1"
+	}
+	986.1.1 = {
+		death = "986.1.1"
+	}
+}
+1000254102 = {
+	name = "Sigvaldi"
+	dynasty = 490
+	religion = catholic
+	culture = norse
+	trait = flamboyant_schemer
+	trait = duelist
+	trait = cynical
+	father = 1000254101
+	969.1.1 = {
+		birth = "969.1.1"
+	}
+	1000.1.1 = {
+		death = "1000.1.1"
+	}
+}
+1000254103 = {
+	name = "Thorkell"
+	dynasty = 490
+	religion = catholic
+	culture = norse
+	trait = tough_soldier
+	trait = tall
+	trait = duelist
+	trait = cynical
+	father = 1000254101
+	give_nickname = nick_the_tall
+	966.1.1 = {
+		birth = "966.1.1"
+	}
+	1033.1.1 = {
+		death = "1033.1.1"
 	}
 }

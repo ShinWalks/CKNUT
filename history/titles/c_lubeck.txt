@@ -13,7 +13,9 @@
 }
 995.1.1 = {
 	holder = 161121  #Mscislaw Nakonid
-	liege = d_obotrites
+}
+1028.1.1 = {
+	holder=20586 #Gryn Wizlawid
 }
 1066.1.1 = {
 	liege = 0

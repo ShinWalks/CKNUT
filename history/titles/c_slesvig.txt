@@ -12,8 +12,12 @@
 	holder = 101505 # Svend Tveskägg
 	liege = "k_denmark"
 }
-1066.1.1 = {
+1020.1.1 = {
+	holder = 101535 # Ulf Jarl
 	liege = "d_slesvig"
+}
+1026.12.25 = {
+	holder = 101510 #Cnut the Great
 }
 1066.1.1 = {
 	holder = 101517

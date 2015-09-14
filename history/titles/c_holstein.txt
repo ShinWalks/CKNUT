@@ -15,7 +15,8 @@
 	holder = 1000252211
 	liege = "d_eastphalia" 
 }
-1066.1.1 = {
+1032.1.1 = {
+	holder = 101510 #Cnut the Great
 	liege = "d_slesvig"
 }
 1066.1.1 = {

@@ -20,11 +20,11 @@
 	holder = 1000255411
 	liege = "d_norfolk"
 }
-1066.1.1 = {
-liege = "d_norfolk"
+1032.1.1 = {
+	holder = 1000254103 # Thorkell the Tall
 }
 1066.1.1 = {
-holder = 5650 #Radulf 'Stalre'
+	holder = 5650 #Radulf 'Stalre'
 }
 1066.10.14 = {
 	liege = "k_england"

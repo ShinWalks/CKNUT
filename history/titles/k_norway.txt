@@ -27,10 +27,7 @@
 	holder = 102527 #Olof The Saint
 }
 1028.1.1 = {	
-	holder = 101510 #Canut 
-}
-1030.1.1 = {
-	holder = 101514 #Svend II
+	holder = 101510 #Cnut the Great
 }
 1035.1.1 = {
 	holder = 102529 #Magnus the Good 

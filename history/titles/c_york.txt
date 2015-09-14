@@ -14,7 +14,9 @@
 	holder = 1000255405
 	liege = "d_york"
 }
-
+1032.1.1 = {
+	holder = 196 # Siward of Northumbria
+}
 1055.1.1 = {
 	holder = 124 #Tostig Godwinson
 }

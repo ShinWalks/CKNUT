@@ -10,6 +10,9 @@
 	law = succ_feudal_elective
 	liege = "k_england"
 }
+1032.1.1 = {
+	holder = 120 # Earl Godwin
+}
 1066.1.1 = {
 	liege = "k_england"
 	law = succ_primogeniture

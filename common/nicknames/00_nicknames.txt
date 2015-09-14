@@ -171,6 +171,20 @@ nick_the_strong = {
 	}
 }
 
+nick_the_tall = {
+	allow = {
+		age = 20
+		trait = tall
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5 #OBJGETNICK
+			has_ambition = obj_get_nick
+		}
+	}
+}
+
 nick_the_magnanimous = {
 	allow = {
 		age = 20

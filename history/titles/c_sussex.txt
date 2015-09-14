@@ -9,8 +9,12 @@
 	holder = 120
 	liege = "d_somerset"
 }
+1032.1.1 = {
+	holder = 120 # Earl Godwin
+	liege = "k_england"
+}
 1066.1.1 = {
-liege = "d_canterbury"
+	liege = "d_canterbury"
 }
 1066.1.5 = {
 	holder = 130

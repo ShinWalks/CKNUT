@@ -10,6 +10,9 @@
     holder = 1000255408
 	liege = "k_england"
 }
+1032.1.1 = {
+	holder = 120 # Earl Godwin
+}
 1066.1.5 = {
 	liege = "k_england"
 }

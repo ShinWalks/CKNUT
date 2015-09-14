@@ -2,8 +2,15 @@
 	holder = 102517
 	liege = "k_denmark"
 }
-1066.1.1 = {
+1032.1.1 = {
+	holder = 101514 # Sveinn Knudsen
 	liege = "k_norway"
+	law = agnatic_succession
+}
+1035.1.29 = {
+	holder = 0
+}
+1066.1.1 = {
 	law = agnatic_succession
 	law = succ_primogeniture
 }

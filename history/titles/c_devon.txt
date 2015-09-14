@@ -90,15 +90,18 @@
 	holder = 1000251406
 	liege = "d_cornwall"
 }
+1032.1.1 = {
+	liege = "d_bedford"
+}
 1066.1.1 = {
-liege = "k_england"
+	liege = "k_england"
 }
 1066.1.5 = {
-holder = 122 # Harold Godwinson
+	holder = 122 # Harold Godwinson
 }
 1066.10.14 = {
-holder = 41260 #Baldwin de Brionne (lord of Okehampton)
-liege = "k_england"
+	holder = 41260 #Baldwin de Brionne (lord of Okehampton)
+	liege = "k_england"
 }
 1090.2.1 = {
 holder = 41263 #Richard de Brionne (lord of Okehampton)

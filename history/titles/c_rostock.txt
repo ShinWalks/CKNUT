@@ -8,6 +8,9 @@
 995.1.1 = {
 	holder = 161121  #Mscislaw Nakonid
 }
+1028.1.1 = {
+	holder=20586 #Gryn Wizlawid
+}
 1043.1.1 = {
 	holder = 8410 #Gottschalk Nakonid
 }
